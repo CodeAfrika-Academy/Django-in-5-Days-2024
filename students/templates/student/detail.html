@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%  block title %} Elib App - {{student.first_name}} {{student.last_name}} {% endblock %}
+
+
+<div class="container">
+    {% block content %}
+    <h1> {{student.first_name}} {{student.last_name}}</h1>
+    <div class="student-details">
+        <p><strong>RegNo:</strong> {{student.regno}}</p>
+        <p><strong>First Name:</strong> {{student.first_name}}</p>
+        <p><strong>Last Name:</strong> {{student.last_name}}</p>
+        <p><strong>Email:</strong> {{student.email}}</p>
+        <p><strong>Phone:</strong> {{student.phone}}</p>
+    </div>
+    {% endblock %}
+</div>

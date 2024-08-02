@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/student.css'%}">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="{% static 'images/logo.png'%}" alt="Elib App Logo">
+            <div class="title">Elib App</div>
+        </div>
+        <div class="avatar">
+            <img src="{% static 'images/user.png'%}" alt="User Avatar">
+        </div>
+    </div>
+
+ 
+
+        {% block content%}
+
+
+        {% endblock %}
+
+   
+
+
+</body>
+
+</html>
