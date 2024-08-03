@@ -9,3 +9,4 @@ class StudentAdmin(admin.ModelAdmin):
     search_fields = ['regno','first_name','email']
     ordering = ['first_name']
     show_facets = admin.ShowFacets.ALWAYS
+    
